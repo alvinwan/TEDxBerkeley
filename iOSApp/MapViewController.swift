@@ -15,6 +15,14 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var centerCoordinate = CLLocationCoordinate2DMake(
+            37.869113, -122.261195)
+        
+        var mapSpan = MKCoordinateSpanMake(0.003, 0.003)
+        
+        var mapRegion=MKCoordinateRegionMake(centerCoordinate, mapSpan)
+        
+        self.mapView.setRegion(mapRegion, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
