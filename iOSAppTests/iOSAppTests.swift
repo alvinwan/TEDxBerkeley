@@ -2,8 +2,8 @@
 //  iOSAppTests.swift
 //  iOSAppTests
 //
-//  Created by Alvin Wan on 1/12/15.
-//  Copyright (c) 2015 Alvin Wan. All rights reserved.
+//  Created by alvinwan on 1/24/15.
+//  Copyright (c) 2015 TExBerkeley. All rights reserved.
 //
 
 import UIKit
