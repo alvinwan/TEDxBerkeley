@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */; };
+		A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */; };
+		A59BA6881A745E1D00CB5034 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59BA6871A745E1D00CB5034 /* MapKit.framework */; };
 		A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0AF1A745293006914E1 /* AppDelegate.swift */; };
 		A5A0B0B21A745293006914E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0B11A745293006914E1 /* FirstViewController.swift */; };
-		A5A0B0B41A745293006914E1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0B31A745293006914E1 /* SecondViewController.swift */; };
+		A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0B31A745293006914E1 /* MapViewController.swift */; };
 		A5A0B0B71A745293006914E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0B51A745293006914E1 /* Main.storyboard */; };
 		A5A0B0B91A745293006914E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0B81A745293006914E1 /* Images.xcassets */; };
 		A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */; };
@@ -27,11 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
+		A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		A59BA6871A745E1D00CB5034 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A5A0B0AA1A745293006914E1 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A0B0AE1A745293006914E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A0B0AF1A745293006914E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A0B0B11A745293006914E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A5A0B0B31A745293006914E1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A5A0B0B31A745293006914E1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A5A0B0B61A745293006914E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A0B0B81A745293006914E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5A0B0BB1A745293006914E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59BA6881A745E1D00CB5034 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,7 @@
 		A5A0B0A11A745292006914E1 = {
 			isa = PBXGroup;
 			children = (
+				A59BA6871A745E1D00CB5034 /* MapKit.framework */,
 				A5A0B0AC1A745293006914E1 /* iOSApp */,
 				A5A0B0C41A745293006914E1 /* iOSAppTests */,
 				A5A0B0AB1A745293006914E1 /* Products */,
@@ -81,7 +89,9 @@
 			children = (
 				A5A0B0AF1A745293006914E1 /* AppDelegate.swift */,
 				A5A0B0B11A745293006914E1 /* FirstViewController.swift */,
-				A5A0B0B31A745293006914E1 /* SecondViewController.swift */,
+				A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */,
+				A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */,
+				A5A0B0B31A745293006914E1 /* MapViewController.swift */,
 				A5A0B0B51A745293006914E1 /* Main.storyboard */,
 				A5A0B0B81A745293006914E1 /* Images.xcassets */,
 				A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */,
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A0B0B41A745293006914E1 /* SecondViewController.swift in Sources */,
+				A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */,
+				A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */,
 				A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */,
+				A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */,
 				A5A0B0B21A745293006914E1 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +423,7 @@
 				A5A0B0CD1A745293006914E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A0B0CE1A745293006914E1 /* Build configuration list for PBXNativeTarget "iOSAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				A5A0B0D01A745293006914E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
