@@ -81,7 +81,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <navigationBar contentMode="scaleToFill" id="gpZ-S7-CBs">
@@ -102,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.png" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="mapView" destination="tAv-CX-DlO" id="4y6-19-i9u"/>
                     </connections>
@@ -140,11 +140,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="gP3-Ca-RCd">
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Jjv-G3-fsu">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
+                            <items>
+                                <navigationItem title="Timeline" id="aWe-n8-85f"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="st3-mL-fD2">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -158,7 +160,7 @@
                             <outlet property="delegate" destination="954-fS-GDR" id="bHG-Re-IRW"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Timeline" id="Y3i-Mw-Y7E"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline.png" id="Y3i-Mw-Y7E"/>
                     <connections>
                         <outlet property="TimelineView" destination="q1o-eG-ay5" id="1hz-Ap-Hi3"/>
                     </connections>
@@ -170,16 +172,19 @@
         <!--Speakers-->
         <scene sceneID="cDx-Ko-iei">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Vxy-Tw-vUB" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gMI-Rt-4Ow">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="SaN-Ew-3Rf">
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="kLV-pm-wqp">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
+                            <items>
+                                <navigationItem title="Speakers" id="Epf-Q8-EkY"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qr4-uK-NL3">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -193,18 +198,19 @@
                             <outlet property="delegate" destination="Vxy-Tw-vUB" id="XrG-aM-BcZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Speakers" id="XtA-R0-Lfc"/>
+                    <tabBarItem key="tabBarItem" title="Speakers" image="speakers.png" id="XtA-R0-Lfc"/>
                     <connections>
                         <outlet property="SpeakersView" destination="gMI-Rt-4Ow" id="1Dh-cj-pK8"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89" y="751"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="home.png" width="20" height="20"/>
+        <image name="map.png" width="20" height="20"/>
+        <image name="speakers.png" width="20" height="20"/>
+        <image name="timeline.png" width="20" height="20"/>
     </resources>
 </document>

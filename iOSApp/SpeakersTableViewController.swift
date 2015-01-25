@@ -13,8 +13,8 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     
     @IBOutlet var SpeakersView: UITableView!
     
-    var items = ["One", "Two"]
-
+    var items = ["John Doe - An acrobat at heart and a nerd by birth.", "Toucan Nine - Some nonsense autobiography."]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return items.count
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

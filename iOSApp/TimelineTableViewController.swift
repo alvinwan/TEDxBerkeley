@@ -13,7 +13,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
 
     @IBOutlet var TimelineView: UITableView!
     
-    var items = ["One", "Two"]
+    var items = ["8:00 a.m. - Booths open.", "9:00 a.m. - \"The Earth is actually a Cube\" - Arnold Schwargeasldfhli", "12:00 p.m. - Lunch Break starts", "1:00 p.m. \"Why Water is Brown\" - John Doe", "4:00 p.m. - Event Conclusion."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return items.count
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
