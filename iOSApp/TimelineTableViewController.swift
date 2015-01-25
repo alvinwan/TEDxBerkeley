@@ -8,10 +8,18 @@
 
 import UIKit
 
-class TimelineTableViewController: UITableViewController {
+class TimelineTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource
+    {
 
+    @IBOutlet var TimelineView: UITableView!
+    
+    var items = ["One", "Two"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.TimelineView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.TimelineView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -30,24 +38,22 @@ class TimelineTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return items.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return items.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        
+        cell.textLabel?.text = self.items[indexPath.row]
+        
+        return cell;
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
