@@ -81,18 +81,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" selectedImage="home.png" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <navigationBar contentMode="scaleToFill" id="gpZ-S7-CBs">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="gCv-Hq-LjR"/>
-                    </items>
-                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="844.5" y="-320"/>
         </scene>
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">
@@ -102,14 +95,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.png" selectedImage="map.png" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="mapView" destination="tAv-CX-DlO" id="4y6-19-i9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="844.5" y="360"/>
         </scene>
         <!--TEDxBerkeley-->
         <scene sceneID="yl2-sM-qoP">
@@ -124,8 +117,8 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="954-fS-GDR" kind="relationship" relationship="viewControllers" id="B5n-bv-v0s"/>
-                        <segue destination="Vxy-Tw-vUB" kind="relationship" relationship="viewControllers" id="36M-sz-90i"/>
+                        <segue destination="zlm-tT-LOL" kind="relationship" relationship="viewControllers" id="xS5-gS-QKh"/>
+                        <segue destination="9bS-tZ-8td" kind="relationship" relationship="viewControllers" id="Unj-cq-Oze"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -133,78 +126,78 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
         <!--Timeline-->
-        <scene sceneID="Etp-kD-0Tv">
+        <scene sceneID="U7v-cd-zIK">
             <objects>
-                <tableViewController id="954-fS-GDR" customClass="TimelineTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="q1o-eG-ay5">
+                <tableViewController id="zlm-tT-LOL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Nc4-op-cpb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="gP3-Ca-RCd">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="gc2-9f-YaR">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
+                            <items>
+                                <navigationItem title="Timeline" id="l7B-D9-X8M"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="st3-mL-fD2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DNz-NM-PrG">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="st3-mL-fD2" id="pqo-xD-4aZ">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DNz-NM-PrG" id="cJC-db-mYz">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="954-fS-GDR" id="tM1-0J-zPq"/>
-                            <outlet property="delegate" destination="954-fS-GDR" id="bHG-Re-IRW"/>
+                            <outlet property="dataSource" destination="zlm-tT-LOL" id="MTg-pJ-TOH"/>
+                            <outlet property="delegate" destination="zlm-tT-LOL" id="Osf-wo-q01"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Timeline" id="Y3i-Mw-Y7E"/>
-                    <connections>
-                        <outlet property="TimelineView" destination="q1o-eG-ay5" id="1hz-Ap-Hi3"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline.png" selectedImage="timeline.png" id="K4A-Xh-Qli"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khn-KO-EF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7v-kU-Mvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="751"/>
+            <point key="canvasLocation" x="-538.5" y="751"/>
         </scene>
         <!--Speakers-->
-        <scene sceneID="cDx-Ko-iei">
+        <scene sceneID="ZNE-rk-CLU">
             <objects>
-                <tableViewController id="Vxy-Tw-vUB" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gMI-Rt-4Ow">
+                <tableViewController id="9bS-tZ-8td" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4sT-hT-gN6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="SaN-Ew-3Rf">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="3H0-Bu-VYW">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
+                            <items>
+                                <navigationItem title="Speakers" id="fks-LU-BiK"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qr4-uK-NL3">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="f0m-PN-JBk">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qr4-uK-NL3" id="bpR-1V-YxD">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f0m-PN-JBk" id="Rw7-kf-KnY">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Vxy-Tw-vUB" id="YNq-Cj-vuv"/>
-                            <outlet property="delegate" destination="Vxy-Tw-vUB" id="XrG-aM-BcZ"/>
+                            <outlet property="dataSource" destination="9bS-tZ-8td" id="Hu3-Qx-CQG"/>
+                            <outlet property="delegate" destination="9bS-tZ-8td" id="srO-wE-Xg2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Speakers" id="XtA-R0-Lfc"/>
-                    <connections>
-                        <outlet property="SpeakersView" destination="gMI-Rt-4Ow" id="1Dh-cj-pK8"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Speakers" image="speakers.png" selectedImage="speakers.png" id="ykL-Th-k9Z"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKT-wd-IGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="751"/>
+            <point key="canvasLocation" x="168" y="751"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="home.png" width="20" height="20"/>
+        <image name="map.png" width="20" height="20"/>
+        <image name="speakers.png" width="20" height="20"/>
+        <image name="timeline.png" width="20" height="20"/>
     </resources>
 </document>
