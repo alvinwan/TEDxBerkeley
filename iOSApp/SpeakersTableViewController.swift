@@ -11,9 +11,9 @@ import UIKit
 class SpeakersTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource
     {
     
-    @IBOutlet weak var SpeakersView: UITableView!
+    @IBOutlet var SpeakersView: UITableView!
     
-    var items = ["John Doe - An acrobat at heart and a nerd by birth.", "Toucan Nine - Some nonsense autobiography."]
+    var items = ["One", "Two"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return items.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -17,10 +17,6 @@
 		A5A0B0B91A745293006914E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0B81A745293006914E1 /* Images.xcassets */; };
 		A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */; };
 		A5A0B0C81A745293006914E1 /* iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0C71A745293006914E1 /* iOSAppTests.swift */; };
-		A5EB23EA1A74E64500640A47 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EB23E61A74E64500640A47 /* home.png */; };
-		A5EB23EB1A74E64500640A47 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EB23E71A74E64500640A47 /* map.png */; };
-		A5EB23EC1A74E64500640A47 /* speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EB23E81A74E64500640A47 /* speakers.png */; };
-		A5EB23ED1A74E64500640A47 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EB23E91A74E64500640A47 /* timeline.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +44,6 @@
 		A5A0B0C11A745293006914E1 /* iOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A0B0C61A745293006914E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A0B0C71A745293006914E1 /* iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppTests.swift; sourceTree = "<group>"; };
-		A5EB23E61A74E64500640A47 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
-		A5EB23E71A74E64500640A47 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		A5EB23E81A74E64500640A47 /* speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakers.png; sourceTree = "<group>"; };
-		A5EB23E91A74E64500640A47 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +68,6 @@
 		A5A0B0A11A745292006914E1 = {
 			isa = PBXGroup;
 			children = (
-				A5EB23E61A74E64500640A47 /* home.png */,
-				A5EB23E71A74E64500640A47 /* map.png */,
-				A5EB23E81A74E64500640A47 /* speakers.png */,
-				A5EB23E91A74E64500640A47 /* timeline.png */,
 				A59BA6871A745E1D00CB5034 /* MapKit.framework */,
 				A5A0B0AC1A745293006914E1 /* iOSApp */,
 				A5A0B0C41A745293006914E1 /* iOSAppTests */,
@@ -217,13 +205,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5EB23ED1A74E64500640A47 /* timeline.png in Resources */,
-				A5EB23EA1A74E64500640A47 /* home.png in Resources */,
-				A5EB23EC1A74E64500640A47 /* speakers.png in Resources */,
 				A5A0B0B71A745293006914E1 /* Main.storyboard in Resources */,
 				A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */,
 				A5A0B0B91A745293006914E1 /* Images.xcassets in Resources */,
-				A5EB23EB1A74E64500640A47 /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
