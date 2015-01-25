@@ -16,25 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="TEDxBerkeley 2015" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="140" y="279" width="321" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="d0L-nm-OY5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="51" y="429" width="500" height="0.0"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="&quot;Wisdom. Compassion. Connection.&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvM-ot-jOv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 28, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDc-eT-ubT">
                                 <rect key="frame" x="88" y="329" width="431" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="432" id="qS4-80-N08">
+                                    <constraint firstAttribute="width" constant="432" id="AcZ-5P-LQG">
                                         <variation key="widthClass=compact" constant="250"/>
                                     </constraint>
                                 </constraints>
@@ -43,8 +39,42 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="AcZ-5P-LQG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="92" y="466" width="431" height="21"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-16" y="337" width="432" height="21"/>
+                                    <mask key="constraints">
+                                        <exclude reference="AcZ-5P-LQG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TedXBerkeley-Logo-e1378447272398.png" translatesAutoresizingMaskIntoConstraints="NO" id="DTG-hD-oAf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="184" y="368" width="246" height="64"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="&quot;Wisdom. Compassion. Connection.&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvM-ot-jOv">
+                                <rect key="frame" x="88" y="329" width="431" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="432" id="qS4-80-N08">
+                                        <variation key="widthClass=compact" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
                                         <exclude reference="qS4-80-N08"/>
                                     </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="92" y="434" width="431" height="21"/>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="-16" y="337" width="432" height="21"/>
@@ -56,26 +86,47 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="PvM-ot-jOv" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="16" id="8M9-cC-VdD"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN">
-                                <variation key="widthClass=compact" constant="10"/>
-                            </constraint>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="eDc-eT-ubT" firstAttribute="top" secondItem="PvM-ot-jOv" secondAttribute="bottom" constant="3" id="LFx-C0-WeG"/>
+                            <constraint firstAttribute="centerX" secondItem="eDc-eT-ubT" secondAttribute="centerX" id="V5E-nL-lbM"/>
+                            <constraint firstAttribute="centerX" secondItem="DTG-hD-oAf" secondAttribute="centerX" id="W2T-zT-5LJ"/>
+                            <constraint firstAttribute="centerX" secondItem="PvM-ot-jOv" secondAttribute="centerX" id="aI6-LP-fzc"/>
                             <constraint firstAttribute="centerX" secondItem="PvM-ot-jOv" secondAttribute="centerX" id="fmD-JS-BQr"/>
                             <constraint firstAttribute="centerX" secondItem="PvM-ot-jOv" secondAttribute="centerX" id="tCX-dY-Vya"/>
+                            <constraint firstItem="PvM-ot-jOv" firstAttribute="top" secondItem="DTG-hD-oAf" secondAttribute="bottom" constant="15" id="tDQ-CP-GNj"/>
+                            <constraint firstAttribute="centerY" secondItem="DTG-hD-oAf" secondAttribute="centerY" id="xcV-LD-bbH"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eDc-eT-ubT"/>
+                                <exclude reference="DTG-hD-oAf"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="8M9-cC-VdD"/>
+                                <exclude reference="W2T-zT-5LJ"/>
+                                <exclude reference="xcV-LD-bbH"/>
+                                <exclude reference="aI6-LP-fzc"/>
                                 <exclude reference="fmD-JS-BQr"/>
                                 <exclude reference="tCX-dY-Vya"/>
+                                <exclude reference="tDQ-CP-GNj"/>
+                                <exclude reference="LFx-C0-WeG"/>
+                                <exclude reference="V5E-nL-lbM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="eDc-eT-ubT"/>
+                                <include reference="DTG-hD-oAf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="W2T-zT-5LJ"/>
+                                <include reference="xcV-LD-bbH"/>
+                                <include reference="aI6-LP-fzc"/>
+                                <include reference="tDQ-CP-GNj"/>
+                                <include reference="LFx-C0-WeG"/>
+                                <include reference="V5E-nL-lbM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="8M9-cC-VdD"/>
                                 <include reference="fmD-JS-BQr"/>
                                 <exclude reference="tCX-dY-Vya"/>
                             </mask>
@@ -92,7 +143,7 @@
                     </items>
                 </navigationBar>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-320.25"/>
         </scene>
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">
@@ -141,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Jjv-G3-fsu">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Timeline" id="aWe-n8-85f"/>
@@ -172,14 +223,13 @@
         <!--Speakers-->
         <scene sceneID="cDx-Ko-iei">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Vxy-Tw-vUB" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gMI-Rt-4Ow">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="kLV-pm-wqp">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Speakers" id="Epf-Q8-EkY"/>
@@ -203,11 +253,13 @@
                         <outlet property="SpeakersView" destination="gMI-Rt-4Ow" id="1Dh-cj-pK8"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89" y="751"/>
         </scene>
     </scenes>
     <resources>
+        <image name="TedXBerkeley-Logo-e1378447272398.png" width="400" height="84"/>
         <image name="home.png" width="20" height="20"/>
         <image name="map.png" width="20" height="20"/>
         <image name="speakers.png" width="20" height="20"/>
