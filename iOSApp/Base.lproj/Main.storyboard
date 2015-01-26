@@ -77,7 +77,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TedXBerkeley-Logo-e1378447272398.png" translatesAutoresizingMaskIntoConstraints="NO" id="DTG-hD-oAf">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="158" y="363" width="283" height="58"/>
+                                    <rect key="frame" x="130" y="356" width="338" height="70"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -142,23 +142,6 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320.25"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController title="Map" id="8rJ-Kc-sve" customClass="MapViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="tAv-CX-DlO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="map.png" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="mapView" destination="tAv-CX-DlO" id="4y6-19-i9u"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="360"/>
-        </scene>
         <!--TEDxBerkeley-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -171,14 +154,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="954-fS-GDR" kind="relationship" relationship="viewControllers" id="B5n-bv-v0s"/>
                         <segue destination="Vxy-Tw-vUB" kind="relationship" relationship="viewControllers" id="36M-sz-90i"/>
+                        <segue destination="Uib-JU-2z0" kind="relationship" relationship="viewControllers" id="HeZ-Cd-DLI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="oW2-jF-SZ3">
+            <objects>
+                <viewController id="Uib-JU-2z0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uHg-ii-CfR"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCW-Wk-hes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tGh-HH-mOp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="Ixd-e3-WSw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pft-1s-ImI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="366.75"/>
         </scene>
         <!--Timeline-->
         <scene sceneID="Etp-kD-0Tv">
@@ -258,7 +259,6 @@
     <resources>
         <image name="TedXBerkeley-Logo-e1378447272398.png" width="400" height="84"/>
         <image name="home.png" width="20" height="20"/>
-        <image name="map.png" width="20" height="20"/>
         <image name="speakers.png" width="20" height="20"/>
         <image name="timeline.png" width="20" height="20"/>
     </resources>
