@@ -175,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="Ixd-e3-WSw"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about.png" id="Ixd-e3-WSw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pft-1s-ImI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,8 +258,10 @@
     </scenes>
     <resources>
         <image name="TedXBerkeley-Logo-e1378447272398.png" width="400" height="84"/>
+        <image name="about.png" width="20" height="20"/>
         <image name="home.png" width="20" height="20"/>
         <image name="speakers.png" width="20" height="20"/>
         <image name="timeline.png" width="20" height="20"/>
     </resources>
+    <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
 </document>

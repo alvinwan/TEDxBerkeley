@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5216A7F1A76E8630037DCFC /* speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = A5216A7E1A76E8630037DCFC /* speakers.png */; };
+		A5216A811A76E8A00037DCFC /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = A5216A801A76E8A00037DCFC /* about.png */; };
 		A522EC731A74EFF000369947 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC6F1A74EFF000369947 /* home.png */; };
 		A522EC741A74EFF000369947 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC701A74EFF000369947 /* map.png */; };
-		A522EC751A74EFF000369947 /* speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC711A74EFF000369947 /* speakers.png */; };
 		A522EC761A74EFF000369947 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC721A74EFF000369947 /* timeline.png */; };
 		A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */; };
 		A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5216A7E1A76E8630037DCFC /* speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakers.png; sourceTree = "<group>"; };
+		A5216A801A76E8A00037DCFC /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		A522EC6F1A74EFF000369947 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		A522EC701A74EFF000369947 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		A522EC711A74EFF000369947 /* speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakers.png; sourceTree = "<group>"; };
 		A522EC721A74EFF000369947 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline.png; sourceTree = "<group>"; };
 		A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
@@ -103,10 +105,11 @@
 				A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */,
 				A5A0B0B31A745293006914E1 /* MapViewController.swift */,
 				A5A0B0B51A745293006914E1 /* Main.storyboard */,
+				A5216A801A76E8A00037DCFC /* about.png */,
+				A5216A7E1A76E8630037DCFC /* speakers.png */,
 				A5AB69181A75540900DDD1C1 /* TedXBerkeley-Logo-e1378447272398.png */,
 				A522EC6F1A74EFF000369947 /* home.png */,
 				A522EC701A74EFF000369947 /* map.png */,
-				A522EC711A74EFF000369947 /* speakers.png */,
 				A522EC721A74EFF000369947 /* timeline.png */,
 				A5A0B0B81A745293006914E1 /* Images.xcassets */,
 				A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */,
@@ -222,10 +225,11 @@
 			files = (
 				A5AB69191A75540900DDD1C1 /* TedXBerkeley-Logo-e1378447272398.png in Resources */,
 				A522EC761A74EFF000369947 /* timeline.png in Resources */,
+				A5216A811A76E8A00037DCFC /* about.png in Resources */,
 				A522EC731A74EFF000369947 /* home.png in Resources */,
-				A522EC751A74EFF000369947 /* speakers.png in Resources */,
 				A5A0B0B71A745293006914E1 /* Main.storyboard in Resources */,
 				A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */,
+				A5216A7F1A76E8630037DCFC /* speakers.png in Resources */,
 				A5A0B0B91A745293006914E1 /* Images.xcassets in Resources */,
 				A522EC741A74EFF000369947 /* map.png in Resources */,
 			);
