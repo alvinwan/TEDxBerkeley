@@ -13,7 +13,11 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     
     @IBOutlet var SpeakersView: UITableView!
     
-    var items = ["John Doe - An acrobat at heart and a nerd by birth.", "Toucan Nine - Some nonsense autobiography."]
+    var items = [
+        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth.", "image": "speaker"],
+        ["name": "Toucan Nine", "byline": "Some nonsense autobiography.", "image": "speaker"],
+        ["name": "Angie", "byline": "I See the Light", "image": "music"]
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +53,21 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        
+        let row = self.items[indexPath.row]
 
-        cell.textLabel?.text = self.items[indexPath.row]
-
+        cell.textLabel?.text = row["name"]
+        cell.detailTextLabel?.text = row["byline"]
+        
+        let theImage = UIImage(named: row["image"] ?? "speaker")
+        cell.imageView?.image = theImage
+        
         return cell;
     }
-
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60;
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

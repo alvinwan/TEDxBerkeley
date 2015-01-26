@@ -197,7 +197,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="st3-mL-fD2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="st3-mL-fD2" customClass="SpeakersTableViewCell" customModule="iOSApp" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="st3-mL-fD2" id="pqo-xD-4aZ">
                                     <autoresizingMask key="autoresizingMask"/>
