@@ -17,7 +17,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
         ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth.", "image": "speaker"],
         ["name": "Toucan Nine", "byline": "Some nonsense autobiography.", "image": "speaker"],
         ["name": "Angie", "byline": "I See the Light", "image": "music"]
-        ]
+    ];
     
     override func viewDidLoad() {
         super.viewDidLoad()

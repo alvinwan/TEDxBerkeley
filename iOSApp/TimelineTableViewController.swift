@@ -13,7 +13,13 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
 
     @IBOutlet var TimelineView: UITableView!
     
-    var items = ["8:00 a.m. - Booths open.", "9:00 a.m. - 'The Earth is actually a Cube' - Arnold Schwargeasldfhli", "12:00 p.m. - Lunch Break starts", "1:00 p.m. 'Why Water is Brown' - John Doe", "4:00 p.m. - Event Conclusion."]
+    var items = [
+        ["time": "800", "end": "900", "title": "Booths open."],
+        ["time": "900", "end": "1000", "title": "The Earth is actually a Cube", "speaker": "Arnold Schwargeasldfhli"],
+        ["time": "1200", "end": "1300", "title": "Lunch Break"],
+        ["time": "1300", "end": "1600", "title": "Why Water is Brown", "speaker": "John Doe"],
+        ["time": "1600", "end": "1650", "title": "Event Conclusion"]
+    ];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +56,10 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        let row = self.items[indexPath.row]
+
+        cell.textLabel?.text = row["time"]
+        cell.detailTextLabel?.text = row["title"]
         
         return cell;
     }
