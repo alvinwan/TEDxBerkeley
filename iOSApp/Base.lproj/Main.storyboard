@@ -35,7 +35,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ztC-Vt-EmD" secondAttribute="centerY" id="9jJ-YS-CiI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ztC-Vt-EmD" secondAttribute="trailing" constant="25" id="NnQ-WY-p23"/>
@@ -198,7 +198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell-timeline" textLabel="OQx-3S-EFu" detailTextLabel="PlZ-Wu-CkH" style="IBUITableViewCellStyleSubtitle" id="st3-mL-fD2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell-timeline" textLabel="OQx-3S-EFu" detailTextLabel="PlZ-Wu-CkH" imageView="V9e-kU-7ar" style="IBUITableViewCellStyleSubtitle" id="st3-mL-fD2">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="st3-mL-fD2" id="pqo-xD-4aZ">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -221,8 +221,14 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             </variation>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="speaker.png" id="V9e-kU-7ar">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ktn-Q3-KVP" kind="show" id="aTd-7d-5ia"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -237,7 +243,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khn-KO-EF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="1502.25"/>
+            <point key="canvasLocation" x="278" y="1497.75"/>
         </scene>
         <!--Speakers Table View Controller-->
         <scene sceneID="cDx-Ko-iei">
@@ -248,7 +254,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell-speaker" textLabel="n7W-OX-H46" detailTextLabel="ina-hy-4WQ" imageView="esd-Xh-T0K" style="IBUITableViewCellStyleSubtitle" id="Qr4-uK-NL3">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell-speaker" textLabel="n7W-OX-H46" detailTextLabel="ina-hy-4WQ" style="IBUITableViewCellStyleSubtitle" id="Qr4-uK-NL3">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qr4-uK-NL3" id="bpR-1V-YxD">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -271,14 +277,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             </variation>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="speaker.png" id="esd-Xh-T0K">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="ktn-Q3-KVP" kind="show" id="2xs-cK-fEw"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -293,7 +293,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="1491.75"/>
+            <point key="canvasLocation" x="-525" y="1487.25"/>
         </scene>
         <!--Speaker-->
         <scene sceneID="95H-Uc-dek">
@@ -305,7 +305,26 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6vJ-a5-cof">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-Rw-yIp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="736"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pg7-Rw-yIp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="pg7-Rw-yIp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Speaker" id="P7O-yz-oKA"/>
                 </viewController>
@@ -330,7 +349,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVG-LN-caj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="750.75"/>
+            <point key="canvasLocation" x="278" y="746.25"/>
         </scene>
         <!--Speakers-->
         <scene sceneID="caD-c9-f3y">
@@ -349,7 +368,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mt-8K-9vX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="750.75"/>
+            <point key="canvasLocation" x="-525" y="746.25"/>
         </scene>
         <!--About-->
         <scene sceneID="RAI-RM-fpd">
@@ -375,7 +394,8 @@
             <objects>
                 <navigationController title="Speaker" automaticallyAdjustsScrollViewInsets="NO" id="ktn-Q3-KVP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAP-Wa-FDe">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="fAP-Wa-FDe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

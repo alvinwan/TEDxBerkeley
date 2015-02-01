@@ -14,11 +14,11 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     @IBOutlet var TimelineView: UITableView!
     
     var items = [
-        ["time": "800", "end": "900", "title": "Booths open."],
-        ["time": "900", "end": "1000", "title": "The Earth is actually a Cube", "speaker": "Arnold Schwargeasldfhli"],
-        ["time": "1200", "end": "1300", "title": "Lunch Break"],
-        ["time": "1300", "end": "1600", "title": "Why Water is Brown", "speaker": "John Doe"],
-        ["time": "1600", "end": "1650", "title": "Event Conclusion"]
+        ["time": "800", "end": "900", "title": "CalDrummers", "image": "music"],
+        ["time": "900", "end": "1000", "title": "The Earth is actually a Cube", "speaker": "Arnold Schwargeasldfhli", "image": "speaker"],
+        ["time": "1200", "end": "1300", "title": "Lunch Break", "image": "music"],
+        ["time": "1300", "end": "1600", "title": "Why Water is Brown", "speaker": "John Doe", "image": "speaker"],
+        ["time": "1600", "end": "1650", "title": "Event Conclusion", "image": "music"]
     ];
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
 //        self.TimelineView.dataSource = self
         
         self.TimelineView.rowHeight = UITableViewAutomaticDimension
-        self.TimelineView.estimatedRowHeight = 44.0
+        self.TimelineView.estimatedRowHeight = 60.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -64,8 +64,16 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
         cell.textLabel?.text = row["time"]
         cell.detailTextLabel?.text = row["title"]
         
+        let theImage = UIImage(named: String(row["image"]!+".png"))
+        cell.imageView?.image = theImage
+        
         return cell;
     }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60;
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

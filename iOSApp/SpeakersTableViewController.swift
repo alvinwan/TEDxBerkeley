@@ -14,9 +14,9 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     @IBOutlet var SpeakersView: UITableView!
     
     var items = [
-        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth.", "image": "speaker"],
-        ["name": "Toucan Nine", "byline": "Some nonsense autobiography.", "image": "speaker"],
-        ["name": "Angie", "byline": "I See the Light", "image": "music"]
+        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth."],
+        ["name": "Toucan Nine", "byline": "Some nonsense autobiography."],
+        ["name": "Angie", "byline": "I See the Light"]
     ];
     
     override func viewDidLoad() {
@@ -61,16 +61,10 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
 
         cell.textLabel?.text = row["name"]
         cell.detailTextLabel?.text = row["byline"]
-
-        let theImage = UIImage(named: String(row["image"]!+".png"))
-        cell.imageView?.image = theImage
         
         return cell;
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 60;
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
