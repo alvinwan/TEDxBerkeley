@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A511DB6F1A7DB2D7009012BC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511DB6E1A7DB2D7009012BC /* AboutViewController.swift */; };
 		A5216A7F1A76E8630037DCFC /* speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = A5216A7E1A76E8630037DCFC /* speakers.png */; };
 		A5216A811A76E8A00037DCFC /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = A5216A801A76E8A00037DCFC /* about.png */; };
 		A5216A871A76EF6B0037DCFC /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = A5216A851A76EF6B0037DCFC /* music.png */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A511DB6E1A7DB2D7009012BC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A5216A7E1A76E8630037DCFC /* speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speakers.png; path = images/speakers.png; sourceTree = "<group>"; };
 		A5216A801A76E8A00037DCFC /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = images/about.png; sourceTree = "<group>"; };
 		A5216A851A76EF6B0037DCFC /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = music.png; path = images/music.png; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */,
 				A5A0B0B31A745293006914E1 /* MapViewController.swift */,
 				A5A0B0B51A745293006914E1 /* Main.storyboard */,
+				A511DB6E1A7DB2D7009012BC /* AboutViewController.swift */,
 				A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */,
 				A5A0B0AD1A745293006914E1 /* Supporting Files */,
 				A5A0B0B81A745293006914E1 /* Images.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A511DB6F1A7DB2D7009012BC /* AboutViewController.swift in Sources */,
 				A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */,
 				A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */,
 				A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */,

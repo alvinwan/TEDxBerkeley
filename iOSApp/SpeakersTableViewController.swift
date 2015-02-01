@@ -58,9 +58,9 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
 
         cell.textLabel?.text = row["name"]
         cell.detailTextLabel?.text = row["byline"]
-        
-        let theImage = UIImage(named: row["image"] ?? "speaker")
-        cell.imageView?.image = theImage
+
+//        let theImage = UIImage(named: row["image"] ?? "speaker")
+//        cell.imageView?.image = theImage
         
         return cell;
     }
