@@ -26,6 +26,9 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
         
         self.TimelineView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.TimelineView.dataSource = self
+        
+        self.TimelineView.rowHeight = UITableViewAutomaticDimension
+        self.TimelineView.estimatedRowHeight = 44.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

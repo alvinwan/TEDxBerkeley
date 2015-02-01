@@ -24,6 +24,9 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
         
         self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.SpeakersView.dataSource = self
+        
+        self.SpeakersView.rowHeight = UITableViewAutomaticDimension
+        self.SpeakersView.estimatedRowHeight = 44.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,7 +41,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.

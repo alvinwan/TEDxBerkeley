@@ -10,8 +10,8 @@ import UIKit
 
 class AboutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var aboutTableView: UITableView!
-    
+    @IBOutlet weak var AboutView: UITableView!
+
     var text = [
         ["copy": "This is some short text."],
         ["copy": "What would you do if you took a moment to sit and ponder. What would you think about? What, where, or to WHOM would your thoughts drift towards? Strange how the subconscious mind can tell us so much about ourselves. Strange that a moment of silence can be so loud, and say so much about who we are."]
@@ -19,12 +19,9 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.aboutTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        // Do any additional setup after loading the view.
-        self.aboutTableView.rowHeight = UITableViewAutomaticDimension
-        self.aboutTableView.estimatedRowHeight = 44.0
+
+        self.AboutView.rowHeight = UITableViewAutomaticDimension
+        self.AboutView.estimatedRowHeight = 44.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,14 +34,13 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = self.AboutView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
-        let row = self.text[indexPath.row]
-        
-        cell.textLabel?.text = row["copy"]
+        cell.textLabel?.text = self.text[indexPath.row]["copy"]
         
         return cell
     }
+    
 
     /*
     // MARK: - Navigation
