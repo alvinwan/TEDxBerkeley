@@ -24,8 +24,8 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.TimelineView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.TimelineView.dataSource = self
+//        self.TimelineView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-timeline")
+//        self.TimelineView.dataSource = self
         
         self.TimelineView.rowHeight = UITableViewAutomaticDimension
         self.TimelineView.estimatedRowHeight = 44.0
@@ -57,7 +57,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell-timeline") as UITableViewCell
         
         let row = self.items[indexPath.row]
 

@@ -13,8 +13,8 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var AboutView: UITableView!
 
     var text = [
-        ["copy": "This is some short text."],
-        ["copy": "What would you do if you took a moment to sit and ponder. What would you think about? What, where, or to WHOM would your thoughts drift towards? Strange how the subconscious mind can tell us so much about ourselves. Strange that a moment of silence can be so loud, and say so much about who we are."]
+        ["headline": "About TEDx", "copy": "This is some short text."],
+        ["headline": "About Us", "copy": "What would you do if you took a moment to sit and ponder. What would you think about? What, where, or to WHOM would your thoughts drift towards? Strange how the subconscious mind can tell us so much about ourselves. Strange that a moment of silence can be so loud, and say so much about who we are."]
     ]
     
     override func viewDidLoad() {
@@ -34,9 +34,14 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.AboutView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = self.AboutView.dequeueReusableCellWithIdentifier("cell-about") as UITableViewCell
         
-        cell.textLabel?.text = self.text[indexPath.row]["copy"]
+        let row = self.text[indexPath.row]
+        
+//        cell.textLabel?.text = row["copy"]
+        
+        cell.textLabel?.text = row["headline"]
+        cell.detailTextLabel?.text = row["copy"]
         
         return cell
     }

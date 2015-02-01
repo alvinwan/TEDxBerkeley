@@ -22,8 +22,8 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.SpeakersView.dataSource = self
+//        self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-speaker")
+//        self.SpeakersView.dataSource = self
         
         self.SpeakersView.rowHeight = UITableViewAutomaticDimension
         self.SpeakersView.estimatedRowHeight = 44.0
@@ -55,15 +55,15 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell-speaker") as UITableViewCell
         
         let row = self.items[indexPath.row]
 
         cell.textLabel?.text = row["name"]
         cell.detailTextLabel?.text = row["byline"]
 
-//        let theImage = UIImage(named: row["image"] ?? "speaker")
-//        cell.imageView?.image = theImage
+        let theImage = UIImage(named: String(row["image"]!+".png"))
+        cell.imageView?.image = theImage
         
         return cell;
     }
