@@ -14,9 +14,9 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     @IBOutlet var SpeakersView: UITableView!
     
     var items = [
-        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth."],
-        ["name": "Toucan Nine", "byline": "Some nonsense autobiography."],
-        ["name": "Angie", "byline": "I See the Light"]
+        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth.", "bio": "This is some text about DoeDoe."],
+        ["name": "Toucan Nine", "byline": "Some nonsense autobiography.", "bio": "and More!"],
+        ["name": "Angie", "byline": "I See the Light", "bio": "wowwwwwwwww"]
     ];
     
     override func viewDidLoad() {
@@ -70,15 +70,16 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        self.performSegueWithIdentifier("speakerDetail", sender: tableView)
 //    }
-//    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if segue.identifier == "speakerDetail" {
-//            let speakerDetailViewController = segue.destinationViewController as UIViewController
-//            let indexPath = self.tableView.indexPathForSelectedRow()!
-//            let destinationTitle = self.items[indexPath.row]["name"]
-//            speakerDetailViewController.title = destinationTitle
-//        }
-//    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "speakerDetail" {
+            let speakerDetailViewController = segue.destinationViewController as SpeakerTableViewController
+            let indexPath = self.tableView.indexPathForSelectedRow()!
+            let data = self.items[indexPath.row];
+            speakerDetailViewController.title = data["name"];
+            speakerDetailViewController.items = data;
+        }
+    }
     
     /*
     // Override to support conditional editing of the table view.

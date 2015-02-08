@@ -9,6 +9,9 @@
 import UIKit
 
 class SpeakerTableViewController: UITableViewController {
+    
+    var order = ["byline", "bio"];
+    var items = ["byline":"loading...", "bio": "loading..."];
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,24 +33,27 @@ class SpeakerTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return self.items.count;
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell-speaker-detail", forIndexPath: indexPath) as UITableViewCell
 
-        // Configure the cell...
+        let row = self.order[indexPath.row];
+        let data = self.items[row];
+        
+        cell.textLabel?.text = data;
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

@@ -275,7 +275,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="iV8-60-bdW" kind="show" identifier="speakerDetail" id="6NK-Cy-2Pv"/>
+                                    <segue destination="Fv6-qn-7Nm" kind="show" id="TsI-e5-fiq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -331,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="297" y="750.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Speaker-->
         <scene sceneID="Dtz-cj-JSj">
             <objects>
-                <tableViewController id="Fv6-qn-7Nm" sceneMemberID="viewController">
+                <tableViewController title="Speaker" id="Fv6-qn-7Nm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6zn-pr-Iuv">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -355,7 +355,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4j-VP-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882" y="750.75"/>
+            <point key="canvasLocation" x="1145" y="750.75"/>
         </scene>
         <!--About-->
         <scene sceneID="RAI-RM-fpd">
@@ -375,24 +375,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fw-JP-pmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="901" y="0.0"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="DJY-CI-F9J">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iV8-60-bdW" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e9l-Qk-D5n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Fv6-qn-7Nm" kind="relationship" relationship="rootViewController" id="VM9-1e-9Nr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G0R-6F-lDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1070" y="750.75"/>
         </scene>
     </scenes>
     <resources>
