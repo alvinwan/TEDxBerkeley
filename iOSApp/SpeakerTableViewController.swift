@@ -1,32 +1,17 @@
 //
-//  SpeakersTableViewController.swift
+//  SpeakerTableViewController.swift
 //  iOSApp
 //
-//  Created by alvinwan on 1/24/15.
+//  Created by alvinwan on 2/8/15.
 //  Copyright (c) 2015 TExBerkeley. All rights reserved.
 //
 
 import UIKit
 
-class SpeakersTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource
-    {
-    
-    @IBOutlet var SpeakersView: UITableView!
-    
-    var items = [
-        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth."],
-        ["name": "Toucan Nine", "byline": "Some nonsense autobiography."],
-        ["name": "Angie", "byline": "I See the Light"]
-    ];
-    
+class SpeakerTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-speaker")
-//        self.SpeakersView.dataSource = self
-        
-//        self.SpeakersView.rowHeight = UITableViewAutomaticDimension
-        self.SpeakersView.estimatedRowHeight = 60.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,45 +26,29 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     }
 
     // MARK: - Table view data source
-    
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return items.count
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell-speaker") as UITableViewCell
-        
-        let row = self.items[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
-        cell.textLabel?.text = row["name"]
-        cell.detailTextLabel?.text = row["byline"]
-        
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-        
-        return cell;
+        // Configure the cell...
+
+        return cell
     }
-    
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        self.performSegueWithIdentifier("speakerDetail", sender: tableView)
-//    }
-//    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if segue.identifier == "speakerDetail" {
-//            let speakerDetailViewController = segue.destinationViewController as UIViewController
-//            let indexPath = self.tableView.indexPathForSelectedRow()!
-//            let destinationTitle = self.items[indexPath.row]["name"]
-//            speakerDetailViewController.title = destinationTitle
-//        }
-//    }
-    
+    */
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

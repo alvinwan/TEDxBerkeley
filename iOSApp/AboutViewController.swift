@@ -21,7 +21,7 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
 
         self.AboutView.rowHeight = UITableViewAutomaticDimension
-        self.AboutView.estimatedRowHeight = 44.0
+        self.AboutView.estimatedRowHeight = 60.0
     }
 
     override func didReceiveMemoryWarning() {
