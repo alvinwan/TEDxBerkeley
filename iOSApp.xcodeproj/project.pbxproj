@@ -26,6 +26,7 @@
 		A5A0B0C81A745293006914E1 /* iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0C71A745293006914E1 /* iOSAppTests.swift */; };
 		A5AB69191A75540900DDD1C1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB69181A75540900DDD1C1 /* logo.png */; };
 		A5DDD81F1A8D42B800B66123 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDD81E1A8D42B800B66123 /* DetailViewController.swift */; };
+		A5DDD8221A8D524E00B66123 /* SABs-profile-picture1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5DDD8211A8D524E00B66123 /* SABs-profile-picture1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A5A0B0C71A745293006914E1 /* iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppTests.swift; sourceTree = "<group>"; };
 		A5AB69181A75540900DDD1C1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = images/logo.png; sourceTree = "<group>"; };
 		A5DDD81E1A8D42B800B66123 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A5DDD8211A8D524E00B66123 /* SABs-profile-picture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "SABs-profile-picture1.jpg"; path = "images/speakers/SABs-profile-picture1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		A5216A841A76EBFF0037DCFC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDD8201A8D524200B66123 /* photos */,
 				A5216A851A76EF6B0037DCFC /* music.png */,
 				A5216A861A76EF6B0037DCFC /* speaker.png */,
 				A5216A801A76E8A00037DCFC /* about.png */,
@@ -158,6 +161,14 @@
 				A5A0B0C61A745293006914E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5DDD8201A8D524200B66123 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDD8211A8D524E00B66123 /* SABs-profile-picture1.jpg */,
+			);
+			name = photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				A5216A811A76E8A00037DCFC /* about.png in Resources */,
 				A522EC731A74EFF000369947 /* home.png in Resources */,
 				A5216A871A76EF6B0037DCFC /* music.png in Resources */,
+				A5DDD8221A8D524E00B66123 /* SABs-profile-picture1.jpg in Resources */,
 				A568370E1A8D14DB00E71EA9 /* Main.storyboard in Resources */,
 				A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */,
 				A5216A7F1A76E8630037DCFC /* speakers.png in Resources */,

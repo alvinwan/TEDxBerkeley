@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="901" y="-730.5"/>
         </scene>
-        <!--About View Controller-->
+        <!--About-->
         <scene sceneID="NNk-Qy-R1Q">
             <objects>
                 <viewController id="qCi-G7-EDh" customClass="AboutViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +158,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="HQG-bs-8Tb"/>
+                    <navigationItem key="navigationItem" title="About" id="HQG-bs-8Tb"/>
                     <connections>
                         <outlet property="AboutView" destination="aQb-uq-JHO" id="rQT-ax-eaC"/>
                     </connections>
@@ -230,13 +230,14 @@
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="500" width="600" height="251"/>
                                     <mask key="constraints">
-                                        <include reference="XDd-19-BK2"/>
+                                        <exclude reference="XDd-19-BK2"/>
                                     </mask>
                                 </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VkB-yz-Lhc" firstAttribute="top" secondItem="mdq-em-C2B" secondAttribute="bottom" id="7H4-I4-rbw"/>
                             <constraint firstItem="bPG-0y-3ga" firstAttribute="leading" secondItem="wBR-Od-MGT" secondAttribute="leadingMargin" constant="50" id="7YY-aY-fhZ"/>
                             <constraint firstAttribute="centerX" secondItem="bPG-0y-3ga" secondAttribute="centerX" id="EJS-T7-6Qs"/>
                             <constraint firstItem="mdq-em-C2B" firstAttribute="top" secondItem="bPG-0y-3ga" secondAttribute="bottom" constant="26" id="FLk-0X-84U"/>
@@ -283,6 +284,7 @@
                                 <exclude reference="EJS-T7-6Qs"/>
                                 <exclude reference="R6j-Bh-xxR"/>
                                 <exclude reference="r0s-lX-p5a"/>
+                                <exclude reference="7H4-I4-rbw"/>
                                 <exclude reference="yLH-fU-ZZ6"/>
                             </mask>
                         </variation>
@@ -311,6 +313,7 @@
                                 <include reference="EJS-T7-6Qs"/>
                                 <include reference="R6j-Bh-xxR"/>
                                 <include reference="r0s-lX-p5a"/>
+                                <include reference="7H4-I4-rbw"/>
                                 <exclude reference="yLH-fU-ZZ6"/>
                             </mask>
                         </variation>
@@ -350,7 +353,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Timeline Table View Controller-->
+        <!--Timeline-->
         <scene sceneID="Etp-kD-0Tv">
             <objects>
                 <tableViewController id="954-fS-GDR" customClass="TimelineTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -394,7 +397,7 @@
                             <outlet property="delegate" destination="954-fS-GDR" id="bHG-Re-IRW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hZF-SW-V9u"/>
+                    <navigationItem key="navigationItem" title="Timeline" id="hZF-SW-V9u"/>
                     <connections>
                         <outlet property="TimelineView" destination="q1o-eG-ay5" id="1hz-Ap-Hi3"/>
                     </connections>
@@ -422,7 +425,7 @@
             </objects>
             <point key="canvasLocation" x="-586" y="750.75"/>
         </scene>
-        <!--Speakers Table View Controller-->
+        <!--Speakers-->
         <scene sceneID="y5q-Ah-2g5">
             <objects>
                 <tableViewController id="Iqd-hX-KMs" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -465,7 +468,7 @@
                             <outlet property="delegate" destination="Iqd-hX-KMs" id="bbK-q8-AtG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8Ik-1C-HMA"/>
+                    <navigationItem key="navigationItem" title="Speakers" id="8Ik-1C-HMA"/>
                     <connections>
                         <outlet property="SpeakersView" destination="71b-bt-3SO" id="Leu-8J-fia"/>
                     </connections>
