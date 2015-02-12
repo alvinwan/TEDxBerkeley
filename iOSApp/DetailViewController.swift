@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelByline: UILabel!
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var labelBio: UILabel!
+    @IBOutlet weak var labelBio: UITextView!
     
     var items = ["name": "loading...", "byline": "loading...", "bio": "loading..."]
     
