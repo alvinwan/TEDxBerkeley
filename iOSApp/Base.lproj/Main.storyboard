@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1713" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Speaker View Controller-->
         <scene sceneID="rJA-Lp-NF3">
             <objects>
-                <viewController id="Jda-mY-7oc" sceneMemberID="viewController">
+                <viewController id="Jda-mY-7oc" customClass="SpeakerViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zic-6w-LGT"/>
                         <viewControllerLayoutGuide type="bottom" id="VkB-yz-Lhc"/>
@@ -205,6 +205,7 @@
                             <constraint firstAttribute="centerX" secondItem="bPG-0y-3ga" secondAttribute="centerX" id="EJS-T7-6Qs"/>
                             <constraint firstAttribute="centerX" secondItem="Wpk-Co-6ET" secondAttribute="centerX" id="ONE-YW-6fW"/>
                             <constraint firstItem="bPG-0y-3ga" firstAttribute="top" secondItem="Wpk-Co-6ET" secondAttribute="bottom" constant="1" id="R6j-Bh-xxR"/>
+                            <constraint firstAttribute="centerX" secondItem="kaq-nb-6X1" secondAttribute="centerX" id="SOa-OE-Sjh"/>
                             <constraint firstItem="Wpk-Co-6ET" firstAttribute="top" secondItem="kaq-nb-6X1" secondAttribute="bottom" constant="24" id="WDe-No-ETE"/>
                         </constraints>
                         <variation key="default">
@@ -214,6 +215,7 @@
                                 <exclude reference="bPG-0y-3ga"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="SOa-OE-Sjh"/>
                                 <exclude reference="ONE-YW-6fW"/>
                                 <exclude reference="WDe-No-ETE"/>
                                 <exclude reference="EJS-T7-6Qs"/>
@@ -227,6 +229,7 @@
                                 <include reference="bPG-0y-3ga"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="SOa-OE-Sjh"/>
                                 <include reference="ONE-YW-6fW"/>
                                 <include reference="WDe-No-ETE"/>
                                 <include reference="EJS-T7-6Qs"/>
@@ -235,6 +238,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="uo0-Cs-L6Y"/>
+                    <connections>
+                        <outlet property="Byline" destination="bPG-0y-3ga" id="6yz-4d-aEU"/>
+                        <outlet property="Name" destination="Wpk-Co-6ET" id="IQy-dL-wMm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ve3-p7-wog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,7 +369,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="KR4-xe-zfc"/>
                     <connections>
-                        <outlet property="SpeakersView" destination="gMI-Rt-4Ow" id="1Dh-cj-pK8"/>
+                        <outlet property="SpeakersView" destination="gMI-Rt-4Ow" id="r53-6C-e8l"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nw-zc-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

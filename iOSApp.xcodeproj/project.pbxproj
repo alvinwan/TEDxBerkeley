@@ -15,12 +15,12 @@
 		A522EC731A74EFF000369947 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC6F1A74EFF000369947 /* home.png */; };
 		A522EC741A74EFF000369947 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC701A74EFF000369947 /* map.png */; };
 		A522EC761A74EFF000369947 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC721A74EFF000369947 /* timeline.png */; };
+		A568370B1A8D10DA00E71EA9 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568370A1A8D10DA00E71EA9 /* SpeakerViewController.swift */; };
 		A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */; };
 		A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */; };
 		A59BA6881A745E1D00CB5034 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59BA6871A745E1D00CB5034 /* MapKit.framework */; };
 		A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0AF1A745293006914E1 /* AppDelegate.swift */; };
 		A5A0B0B21A745293006914E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0B11A745293006914E1 /* FirstViewController.swift */; };
-		A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B0B31A745293006914E1 /* MapViewController.swift */; };
 		A5A0B0B71A745293006914E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0B51A745293006914E1 /* Main.storyboard */; };
 		A5A0B0B91A745293006914E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0B81A745293006914E1 /* Images.xcassets */; };
 		A5A0B0BC1A745293006914E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */; };
@@ -47,6 +47,7 @@
 		A522EC6F1A74EFF000369947 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = images/home.png; sourceTree = "<group>"; };
 		A522EC701A74EFF000369947 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = images/map.png; sourceTree = "<group>"; };
 		A522EC721A74EFF000369947 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timeline.png; path = images/timeline.png; sourceTree = "<group>"; };
+		A568370A1A8D10DA00E71EA9 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6871A745E1D00CB5034 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		A5A0B0AE1A745293006914E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A0B0AF1A745293006914E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A0B0B11A745293006914E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A5A0B0B31A745293006914E1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A5A0B0B61A745293006914E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A0B0B81A745293006914E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5A0B0BB1A745293006914E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 				A5A0B0AF1A745293006914E1 /* AppDelegate.swift */,
 				A5A0B0B11A745293006914E1 /* FirstViewController.swift */,
 				A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */,
+				A568370A1A8D10DA00E71EA9 /* SpeakerViewController.swift */,
 				A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */,
-				A5A0B0B31A745293006914E1 /* MapViewController.swift */,
 				A5A0B0B51A745293006914E1 /* Main.storyboard */,
 				A511DB701A7DBFB5009012BC /* AboutViewController.swift */,
 				A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */,
@@ -270,9 +270,9 @@
 			files = (
 				A511DB711A7DBFB5009012BC /* AboutViewController.swift in Sources */,
 				A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */,
-				A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */,
 				A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */,
 				A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */,
+				A568370B1A8D10DA00E71EA9 /* SpeakerViewController.swift in Sources */,
 				A5A0B0B21A745293006914E1 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
