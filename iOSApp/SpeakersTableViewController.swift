@@ -69,21 +69,13 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
         return cell;
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let data = items[indexPath.row]
-//        
-//        let SpeakerDetail = SpeakerViewController()
-//        SpeakerDetail.items = data
-//        
-//        SpeakerDetail.performSegueWithIdentifier("speakerDetail", sender: self)
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "speakerDetail" {
-            let SpeakerDetail = segue.destinationViewController as SpeakerViewController;
+            let SpeakerDetail = segue.destinationViewController as DetailViewController;
             let indexPath = self.tableView.indexPathForSelectedRow()!
             let data = self.items[indexPath.row];
             SpeakerDetail.items = data;
+            SpeakerDetail.updateLabels()
         }
     }
     

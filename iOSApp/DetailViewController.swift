@@ -1,27 +1,33 @@
 //
-//  SpeakerViewController.swift
+//  DetailViewController.swift
 //  iOSApp
 //
-//  Created by alvinwan on 2/12/15.
+//  Created by Alvin Wan on 2/12/15.
 //  Copyright (c) 2015 TExBerkeley. All rights reserved.
 //
 
 import UIKit
 
-class SpeakerViewController: UIViewController {
+class DetailViewController: UIViewController {
 
-//    @IBOutlet weak var Name: UILabel!
-//    @IBOutlet weak var Byline: UILabel!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelByline: UILabel!
+    @IBOutlet weak var image: UIImageView!
     
-    var items = ["name": "Loading...", "byline": "loading..."]
+    var items = ["name": "loading...", "byline": "loading..."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        Name.text = items["name"]
-//        Byline.text = items["byline"]
+        updateLabels();
 
         // Do any additional setup after loading the view.
+    }
+    
+    func updateLabels() {
+        print(self.items)
+        labelName?.text = self.items["name"]
+        labelByline?.text = self.items["byline"]
     }
 
     override func didReceiveMemoryWarning() {
