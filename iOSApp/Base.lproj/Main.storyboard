@@ -200,18 +200,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="221" y="381" width="158" height="71"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPG-0y-3ga">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="279" y="453" width="42" height="21"/>
-                                </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-em-C2B">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -227,8 +221,7 @@
                                         <exclude reference="XDd-19-BK2"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="500" width="600" height="251"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <exclude reference="XDd-19-BK2"/>
                                     </mask>
@@ -267,11 +260,17 @@
                                 <exclude reference="mdq-em-C2B"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="7H4-I4-rbw"/>
+                                <exclude reference="yLH-fU-ZZ6"/>
+                                <exclude reference="ONE-YW-6fW"/>
+                                <exclude reference="WDe-No-ETE"/>
+                                <exclude reference="7YY-aY-fhZ"/>
+                                <exclude reference="EJS-T7-6Qs"/>
+                                <exclude reference="R6j-Bh-xxR"/>
+                                <exclude reference="r0s-lX-p5a"/>
                                 <exclude reference="SOa-OE-Sjh"/>
                                 <exclude reference="UKv-hT-F5f"/>
                                 <exclude reference="qj4-fo-E9A"/>
-                                <exclude reference="ONE-YW-6fW"/>
-                                <exclude reference="WDe-No-ETE"/>
                                 <exclude reference="FLk-0X-84U"/>
                                 <exclude reference="KIi-iD-tMN"/>
                                 <exclude reference="XTT-gX-oo3"/>
@@ -280,12 +279,6 @@
                                 <exclude reference="k1G-fN-DQu"/>
                                 <exclude reference="sWC-lC-a7H"/>
                                 <exclude reference="tfH-0Y-UdB"/>
-                                <exclude reference="7YY-aY-fhZ"/>
-                                <exclude reference="EJS-T7-6Qs"/>
-                                <exclude reference="R6j-Bh-xxR"/>
-                                <exclude reference="r0s-lX-p5a"/>
-                                <exclude reference="7H4-I4-rbw"/>
-                                <exclude reference="yLH-fU-ZZ6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -296,11 +289,17 @@
                                 <include reference="mdq-em-C2B"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="7H4-I4-rbw"/>
+                                <exclude reference="yLH-fU-ZZ6"/>
+                                <include reference="ONE-YW-6fW"/>
+                                <include reference="WDe-No-ETE"/>
+                                <include reference="7YY-aY-fhZ"/>
+                                <include reference="EJS-T7-6Qs"/>
+                                <include reference="R6j-Bh-xxR"/>
+                                <include reference="r0s-lX-p5a"/>
                                 <include reference="SOa-OE-Sjh"/>
                                 <include reference="UKv-hT-F5f"/>
                                 <include reference="qj4-fo-E9A"/>
-                                <include reference="ONE-YW-6fW"/>
-                                <include reference="WDe-No-ETE"/>
                                 <exclude reference="FLk-0X-84U"/>
                                 <exclude reference="KIi-iD-tMN"/>
                                 <include reference="XTT-gX-oo3"/>
@@ -309,12 +308,6 @@
                                 <exclude reference="k1G-fN-DQu"/>
                                 <include reference="sWC-lC-a7H"/>
                                 <exclude reference="tfH-0Y-UdB"/>
-                                <include reference="7YY-aY-fhZ"/>
-                                <include reference="EJS-T7-6Qs"/>
-                                <include reference="R6j-Bh-xxR"/>
-                                <include reference="r0s-lX-p5a"/>
-                                <include reference="7H4-I4-rbw"/>
-                                <exclude reference="yLH-fU-ZZ6"/>
                             </mask>
                         </variation>
                     </view>
@@ -430,6 +423,7 @@
             <objects>
                 <tableViewController id="Iqd-hX-KMs" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="71b-bt-3SO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
