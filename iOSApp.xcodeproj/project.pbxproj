@@ -15,7 +15,6 @@
 		A522EC731A74EFF000369947 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC6F1A74EFF000369947 /* home.png */; };
 		A522EC741A74EFF000369947 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC701A74EFF000369947 /* map.png */; };
 		A522EC761A74EFF000369947 /* timeline.png in Resources */ = {isa = PBXBuildFile; fileRef = A522EC721A74EFF000369947 /* timeline.png */; };
-		A58609B11A87DAA500D03716 /* SpeakerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58609B01A87DAA500D03716 /* SpeakerTableViewController.swift */; };
 		A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */; };
 		A59BA6861A745CD500CB5034 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */; };
 		A59BA6881A745E1D00CB5034 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59BA6871A745E1D00CB5034 /* MapKit.framework */; };
@@ -48,7 +47,6 @@
 		A522EC6F1A74EFF000369947 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = images/home.png; sourceTree = "<group>"; };
 		A522EC701A74EFF000369947 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = images/map.png; sourceTree = "<group>"; };
 		A522EC721A74EFF000369947 /* timeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timeline.png; path = images/timeline.png; sourceTree = "<group>"; };
-		A58609B01A87DAA500D03716 /* SpeakerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		A59BA6871A745E1D00CB5034 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -125,7 +123,6 @@
 				A5A0B0AF1A745293006914E1 /* AppDelegate.swift */,
 				A5A0B0B11A745293006914E1 /* FirstViewController.swift */,
 				A59BA6831A745CC400CB5034 /* SpeakersTableViewController.swift */,
-				A58609B01A87DAA500D03716 /* SpeakerTableViewController.swift */,
 				A59BA6851A745CD500CB5034 /* TimelineTableViewController.swift */,
 				A5A0B0B31A745293006914E1 /* MapViewController.swift */,
 				A5A0B0B51A745293006914E1 /* Main.storyboard */,
@@ -272,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A511DB711A7DBFB5009012BC /* AboutViewController.swift in Sources */,
-				A58609B11A87DAA500D03716 /* SpeakerTableViewController.swift in Sources */,
 				A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */,
 				A5A0B0B41A745293006914E1 /* MapViewController.swift in Sources */,
 				A5A0B0B01A745293006914E1 /* AppDelegate.swift in Sources */,

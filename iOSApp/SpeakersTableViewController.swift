@@ -20,6 +20,8 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     ];
     
     override func viewDidLoad() {
+        println("speakers loaded");
+        
         super.viewDidLoad()
         
 //        self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-speaker")
@@ -67,18 +69,28 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
         return cell;
     }
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        self.performSegueWithIdentifier("speakerDetail", sender: tableView)
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let data = items[indexPath.row]
+        
+        let speakerDetailViewController = SpeakerTableViewController()
+        speakerDetailViewController.items = data
+        
+        speakerDetailViewController.performSegueWithIdentifier("speakerDetail", sender: self)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "speakerDetail" {
-            let speakerDetailViewController = segue.destinationViewController as SpeakerTableViewController
+        println("preparation called");
+//        if segue.identifier == "speakerDetail" {
+            println("preparing...");
+        let speakerDetailViewController = segue.destinationViewController as SpeakerTableViewController;
+//        SpeakerTableViewController
+            speakerDetailViewController.viewDidLoad();
+            println("preparing...");
             let indexPath = self.tableView.indexPathForSelectedRow()!
             let data = self.items[indexPath.row];
-            speakerDetailViewController.title = data["name"];
+//            speakerDetailViewController.title = data["name"];
             speakerDetailViewController.items = data;
-        }
+//        }
     }
     
     /*

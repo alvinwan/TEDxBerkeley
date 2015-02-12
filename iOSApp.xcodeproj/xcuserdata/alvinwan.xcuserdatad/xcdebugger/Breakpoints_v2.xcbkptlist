@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSApp/AboutViewController.swift"
-            timestampString = "445108671.283369"
+            timestampString = "444449767.965085"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -26,115 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSApp/SpeakersTableViewController.swift"
-            timestampString = "445109110.769131"
+            timestampString = "445208210.362532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSApp/SpeakerTableViewController.swift"
-            timestampString = "445113322.770624"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "SpeakerTableViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.items.setter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.800055"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.items.materializeForSet : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.800277"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.init (iOSApp.SpeakerTableViewController.Type)(style : C.UITableViewStyle) -&gt; iOSApp.SpeakerTableViewController"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.800466"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.init (iOSApp.SpeakerTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; iOSApp.SpeakerTableViewController"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.800645"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "47">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.init (iOSApp.SpeakerTableViewController.Type)() -&gt; iOSApp.SpeakerTableViewController"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.800829"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOSApp.SpeakerTableViewController.init (iOSApp.SpeakerTableViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; iOSApp.SpeakerTableViewController"
-                  moduleName = "iOSApp"
-                  urlString = "file:///Users/alvinwan/Library/Mobile%20Documents/com~apple~CloudDocs/Github/TEDx/iOSApp/iOSApp/SpeakerTableViewController.swift"
-                  timestampString = "445112371.80101"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "42">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
