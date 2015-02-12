@@ -23,10 +23,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.TimelineView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-timeline")
-//        self.TimelineView.dataSource = self
-        
+  
         self.TimelineView.rowHeight = UITableViewAutomaticDimension
         self.TimelineView.estimatedRowHeight = 60.0
 

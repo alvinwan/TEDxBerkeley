@@ -14,27 +14,14 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     @IBOutlet var SpeakersView: UITableView!
     
     var items = [
-        ["name": "John Doe", "byline": "An acrobat at heart and a nerd by birth.", "bio": "This is some text about DoeDoe."],
-        ["name": "Toucan Nine", "byline": "Some nonsense autobiography.", "bio": "and More!"],
-        ["name": "Angie", "byline": "I See the Light", "bio": "wowwwwwwwww"]
+        ["name": "Suzanne Ackerman-Berman", "byline": "Transformation Director, PicknPay South Africa", "bio": "Suzanne graduated from UCT (University of Cape Town) with a BA in French and Politics. Whilst a student, she was the first woman to chair the University Students Fund raising Rag committee 1984, and was elected vice-chair of SHAWCO.( Students Community Welfare Programs ).  After university, Suzanne received extensive training in supermarkets in France and UK. She settled in France, ran her own businesses in restaurants and nightclubs in a French Ski resort for 7 years. Returning to South Africa, she joined the family Supermarket business, Pick n Pay , as a trainee manager in fresh foods.  During her 19 years in the Company, she worked in various positions in the business, starting from Floor management, and buying, to General Manager of Corporate Affairs and Social Responsibility. In 2007 she founded the Small Business Incubator that seeks to address the social and economic inequalities of the past created by the Apartheid era, by creating access to the formal market for small and previously disadvantaged entrepreneurs. A passionate proponent for equality, job creation and skills development, Suzanne assists many new entrepreneurs in all aspects of business and life skills through a detailed mentorship programme that ensures their sustainability as suppliers to the broader economy."],
     ];
     
     override func viewDidLoad() {
         println("speakers loaded");
         
         super.viewDidLoad()
-        
-//        self.SpeakersView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell-speaker")
-//        self.SpeakersView.dataSource = self
-        
-//        self.SpeakersView.rowHeight = UITableViewAutomaticDimension
         self.SpeakersView.estimatedRowHeight = 60.0
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {

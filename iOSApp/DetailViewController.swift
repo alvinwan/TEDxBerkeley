@@ -13,8 +13,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelByline: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var labelBio: UILabel!
     
-    var items = ["name": "loading...", "byline": "loading..."]
+    var items = ["name": "loading...", "byline": "loading...", "bio": "loading..."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,9 @@ class DetailViewController: UIViewController {
     }
     
     func updateLabels() {
-        print(self.items)
         labelName?.text = self.items["name"]
         labelByline?.text = self.items["byline"]
+        labelBio?.text = self.items["bio"]
     }
 
     override func didReceiveMemoryWarning() {

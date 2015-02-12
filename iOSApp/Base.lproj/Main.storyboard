@@ -213,22 +213,38 @@
                                     <rect key="frame" x="279" y="453" width="42" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dae-bn-nS8">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="279" y="503" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bPG-0y-3ga" firstAttribute="leading" secondItem="wBR-Od-MGT" secondAttribute="leadingMargin" constant="50" id="7YY-aY-fhZ"/>
                             <constraint firstAttribute="centerX" secondItem="bPG-0y-3ga" secondAttribute="centerX" id="EJS-T7-6Qs"/>
+                            <constraint firstItem="dae-bn-nS8" firstAttribute="top" secondItem="bPG-0y-3ga" secondAttribute="bottom" constant="29" id="JV6-i7-uom"/>
+                            <constraint firstAttribute="centerX" secondItem="dae-bn-nS8" secondAttribute="centerX" id="LDP-QO-x30"/>
                             <constraint firstAttribute="centerX" secondItem="Wpk-Co-6ET" secondAttribute="centerX" id="ONE-YW-6fW"/>
                             <constraint firstItem="bPG-0y-3ga" firstAttribute="top" secondItem="Wpk-Co-6ET" secondAttribute="bottom" constant="1" id="R6j-Bh-xxR"/>
                             <constraint firstAttribute="centerX" secondItem="kaq-nb-6X1" secondAttribute="centerX" id="SOa-OE-Sjh"/>
+                            <constraint firstItem="dae-bn-nS8" firstAttribute="leading" secondItem="wBR-Od-MGT" secondAttribute="leadingMargin" constant="50" id="StW-N4-sI6"/>
                             <constraint firstItem="kaq-nb-6X1" firstAttribute="top" secondItem="Zic-6w-LGT" secondAttribute="bottom" id="UKv-hT-F5f"/>
                             <constraint firstItem="Wpk-Co-6ET" firstAttribute="top" secondItem="kaq-nb-6X1" secondAttribute="bottom" constant="24" id="WDe-No-ETE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dae-bn-nS8" secondAttribute="trailing" constant="50" id="b89-Tj-MM0"/>
                             <constraint firstItem="kaq-nb-6X1" firstAttribute="leading" secondItem="wBR-Od-MGT" secondAttribute="leading" id="qj4-fo-E9A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bPG-0y-3ga" secondAttribute="trailing" constant="50" id="r0s-lX-p5a"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kaq-nb-6X1"/>
                                 <exclude reference="Wpk-Co-6ET"/>
                                 <exclude reference="bPG-0y-3ga"/>
+                                <exclude reference="dae-bn-nS8"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="SOa-OE-Sjh"/>
@@ -236,8 +252,14 @@
                                 <exclude reference="qj4-fo-E9A"/>
                                 <exclude reference="ONE-YW-6fW"/>
                                 <exclude reference="WDe-No-ETE"/>
+                                <exclude reference="7YY-aY-fhZ"/>
                                 <exclude reference="EJS-T7-6Qs"/>
                                 <exclude reference="R6j-Bh-xxR"/>
+                                <exclude reference="r0s-lX-p5a"/>
+                                <exclude reference="JV6-i7-uom"/>
+                                <exclude reference="LDP-QO-x30"/>
+                                <exclude reference="StW-N4-sI6"/>
+                                <exclude reference="b89-Tj-MM0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -245,6 +267,7 @@
                                 <include reference="kaq-nb-6X1"/>
                                 <include reference="Wpk-Co-6ET"/>
                                 <include reference="bPG-0y-3ga"/>
+                                <include reference="dae-bn-nS8"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="SOa-OE-Sjh"/>
@@ -252,14 +275,21 @@
                                 <include reference="qj4-fo-E9A"/>
                                 <include reference="ONE-YW-6fW"/>
                                 <include reference="WDe-No-ETE"/>
+                                <include reference="7YY-aY-fhZ"/>
                                 <include reference="EJS-T7-6Qs"/>
                                 <include reference="R6j-Bh-xxR"/>
+                                <include reference="r0s-lX-p5a"/>
+                                <include reference="JV6-i7-uom"/>
+                                <include reference="LDP-QO-x30"/>
+                                <include reference="StW-N4-sI6"/>
+                                <include reference="b89-Tj-MM0"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="uo0-Cs-L6Y"/>
                     <connections>
                         <outlet property="image" destination="kaq-nb-6X1" id="ane-Pn-5Fe"/>
+                        <outlet property="labelBio" destination="dae-bn-nS8" id="ZTU-Rf-spl"/>
                         <outlet property="labelByline" destination="bPG-0y-3ga" id="rlM-XC-Thi"/>
                         <outlet property="labelName" destination="Wpk-Co-6ET" id="u8f-YV-xQ2"/>
                     </connections>
