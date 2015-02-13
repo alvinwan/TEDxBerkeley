@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
         labelName?.text = self.items["name"]
         labelByline?.text = self.items["byline"]
         labelBio?.text = self.items["bio"]
-//        image?.image = UIImage(named: String(self.items["image"]!+""))
+        image?.image = UIImage(named: String(self.items["image"]!+""))
     }
 
     override func didReceiveMemoryWarning() {
