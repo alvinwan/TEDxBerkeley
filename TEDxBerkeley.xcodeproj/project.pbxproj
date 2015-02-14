@@ -47,7 +47,6 @@
 		A5C5BA201A8ED1E6008B2962 /* Viviana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C5BA0B1A8ED1E6008B2962 /* Viviana.jpg */; };
 		A5C5BA211A8ED1E6008B2962 /* Woz-Head-Shot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C5BA0C1A8ED1E6008B2962 /* Woz-Head-Shot2.jpg */; };
 		A5C8A5AF1A8F368600DB0A98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8A5AE1A8F368600DB0A98 /* MainTabBarController.swift */; };
-		A5C8A5B11A8F3F0A00DB0A98 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8A5B01A8F3F0A00DB0A98 /* MainNavigationController.swift */; };
 		A5CF1B181A8F268D0018768A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF1B171A8F268D0018768A /* Data.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +105,6 @@
 		A5C5BA0B1A8ED1E6008B2962 /* Viviana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Viviana.jpg; sourceTree = "<group>"; };
 		A5C5BA0C1A8ED1E6008B2962 /* Woz-Head-Shot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Woz-Head-Shot2.jpg"; sourceTree = "<group>"; };
 		A5C8A5AE1A8F368600DB0A98 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		A5C8A5B01A8F3F0A00DB0A98 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		A5CF1B171A8F268D0018768A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,7 +172,6 @@
 				A511DB701A7DBFB5009012BC /* AboutViewController.swift */,
 				A568370C1A8D14DB00E71EA9 /* Main.storyboard */,
 				A5C8A5AE1A8F368600DB0A98 /* MainTabBarController.swift */,
-				A5C8A5B01A8F3F0A00DB0A98 /* MainNavigationController.swift */,
 				A5A0B0BA1A745293006914E1 /* LaunchScreen.xib */,
 				A5A0B0AD1A745293006914E1 /* Supporting Files */,
 				A5A0B0B81A745293006914E1 /* Images.xcassets */,
@@ -368,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C8A5B11A8F3F0A00DB0A98 /* MainNavigationController.swift in Sources */,
 				A511DB711A7DBFB5009012BC /* AboutViewController.swift in Sources */,
 				A59BA6841A745CC400CB5034 /* SpeakersTableViewController.swift in Sources */,
 				A5C8A5AF1A8F368600DB0A98 /* MainTabBarController.swift in Sources */,
