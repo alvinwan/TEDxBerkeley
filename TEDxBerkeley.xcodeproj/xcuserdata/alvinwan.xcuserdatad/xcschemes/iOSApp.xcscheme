@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5A0B0A91A745292006914E1"
                BuildableName = "iOSApp.app"
-               BlueprintName = "iOSApp"
-               ReferencedContainer = "container:iOSApp.xcodeproj">
+               BlueprintName = "TEDxBerkeley"
+               ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5A0B0C01A745293006914E1"
                BuildableName = "iOSAppTests.xctest"
-               BlueprintName = "iOSAppTests"
-               ReferencedContainer = "container:iOSApp.xcodeproj">
+               BlueprintName = "TEDxBerkeleyTests"
+               ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5A0B0C01A745293006914E1"
                BuildableName = "iOSAppTests.xctest"
-               BlueprintName = "iOSAppTests"
-               ReferencedContainer = "container:iOSApp.xcodeproj">
+               BlueprintName = "TEDxBerkeleyTests"
+               ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A0B0A91A745292006914E1"
             BuildableName = "iOSApp.app"
-            BlueprintName = "iOSApp"
-            ReferencedContainer = "container:iOSApp.xcodeproj">
+            BlueprintName = "TEDxBerkeley"
+            ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A0B0A91A745292006914E1"
             BuildableName = "iOSApp.app"
-            BlueprintName = "iOSApp"
-            ReferencedContainer = "container:iOSApp.xcodeproj">
+            BlueprintName = "TEDxBerkeley"
+            ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A0B0A91A745292006914E1"
             BuildableName = "iOSApp.app"
-            BlueprintName = "iOSApp"
-            ReferencedContainer = "container:iOSApp.xcodeproj">
+            BlueprintName = "TEDxBerkeley"
+            ReferencedContainer = "container:TEDxBerkeley.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

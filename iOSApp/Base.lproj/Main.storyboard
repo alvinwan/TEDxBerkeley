@@ -9,7 +9,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Home" id="9pv-A4-QxB" customClass="FirstViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="9pv-A4-QxB" customClass="FirstViewController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -66,7 +66,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="acW-dT-cKf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-7"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <navigationBar contentMode="scaleToFill" id="gpZ-S7-CBs">
@@ -82,7 +84,7 @@
         <!--About-->
         <scene sceneID="NNk-Qy-R1Q">
             <objects>
-                <viewController id="qCi-G7-EDh" customClass="AboutViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qCi-G7-EDh" customClass="AboutViewController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4em-Bj-Ku1"/>
                         <viewControllerLayoutGuide type="bottom" id="BCe-FB-1AR"/>
@@ -163,7 +165,7 @@
         <!--Speaker View Controller-->
         <scene sceneID="rJA-Lp-NF3">
             <objects>
-                <viewController title="Speaker View Controller" id="Jda-mY-7oc" customClass="DetailViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Speaker View Controller" id="Jda-mY-7oc" customClass="DetailViewController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zic-6w-LGT"/>
                         <viewControllerLayoutGuide type="bottom" id="VkB-yz-Lhc"/>
@@ -319,14 +321,14 @@
         <!--TEDxBerkeley-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController title="TEDxBerkeley" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController title="TEDxBerkeley" id="49e-Tb-3d3" customClass="MainTabBarController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="lightTextColor"/>
-                        <color key="selectedImageTintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="barTintColor" red="0.69803921570000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.17819144034604784" blue="0.21840821885606254" alpha="0.5" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -342,7 +344,7 @@
         <!--Timeline-->
         <scene sceneID="Etp-kD-0Tv">
             <objects>
-                <tableViewController id="954-fS-GDR" customClass="TimelineTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="954-fS-GDR" customClass="TimelineTableViewController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="q1o-eG-ay5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,8 +397,10 @@
         <!--Timeline-->
         <scene sceneID="6FI-1Y-iX7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koJ-dM-Z2E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline.png" id="Y3i-Mw-Y7E"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koJ-dM-Z2E" customClass="MainNavigationController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline.png" id="Y3i-Mw-Y7E">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jag-ji-CIr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -414,7 +418,7 @@
         <!--Speakers-->
         <scene sceneID="y5q-Ah-2g5">
             <objects>
-                <tableViewController id="Iqd-hX-KMs" customClass="SpeakersTableViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Iqd-hX-KMs" customClass="SpeakersTableViewController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="71b-bt-3SO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,12 +471,17 @@
         <!--About-->
         <scene sceneID="RAI-RM-fpd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NdN-c1-OXy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="about.png" id="KYP-ak-Pgb"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NdN-c1-OXy" customClass="MainNavigationController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="about.png" id="KYP-ak-Pgb">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1y9-yl-A5P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -486,8 +495,10 @@
         <!--Speakers-->
         <scene sceneID="9Kz-LH-yR4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IMd-A8-vIq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Speakers" image="speakers.png" id="h28-1p-Nrh"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IMd-A8-vIq" customClass="MainNavigationController" customModule="TEDxBerkeley" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Speakers" image="speakers.png" id="h28-1p-Nrh">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Toe-Eo-NHe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -504,12 +515,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about.png" width="20" height="20"/>
-        <image name="home.png" width="20" height="20"/>
+        <image name="about.png" width="16" height="16"/>
+        <image name="home.png" width="16" height="16"/>
         <image name="logo.png" width="400" height="84"/>
         <image name="speaker.png" width="200" height="200"/>
-        <image name="speakers.png" width="20" height="20"/>
-        <image name="timeline.png" width="20" height="20"/>
+        <image name="speakers.png" width="16" height="16"/>
+        <image name="timeline.png" width="16" height="16"/>
     </resources>
-    <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+    <color key="tintColor" red="0.90196078431372551" green="0.16862745098039217" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
