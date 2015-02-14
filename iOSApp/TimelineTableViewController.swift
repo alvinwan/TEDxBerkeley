@@ -78,8 +78,8 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
         
         let row = self.items[indexPath.row]
 
-        cell.textLabel?.text = row["time"]
-        cell.detailTextLabel?.text = row["title"]
+        cell.textLabel?.text = row["title"]
+        cell.detailTextLabel?.text = row["time"]
         
         let theImage = UIImage(named: String(row["image"]!+".png"))
         cell.imageView?.image = theImage
