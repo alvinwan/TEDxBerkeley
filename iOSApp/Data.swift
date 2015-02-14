@@ -87,7 +87,7 @@ var imagesSpeakers = [
     "DanGarciaUCBFacultyTEDxBerkeley5.jpg",
     "MarcGopin.jpeg",
     "Viviana.jpg",
-    "Eric-Gimenez285x335",
+    "Eric-Gimenez285x335.jpg",
     "Valerie-Joi-Photo.jpg",
     "pkaipa12-2-large-e1381879857450.jpg",
     "DR.-Victoria-KISYOMBE.jpg",
@@ -100,7 +100,7 @@ var imagesSpeakers = [
     "headshot.jpg",
     "taiko.jpg",
     "10965404_1615056408716561_1849825701_n1.jpg",
-    "DanVieder",
+    "DanVieder.jpg",
     "Woz-Head-Shot2.jpg"
 ]
 
