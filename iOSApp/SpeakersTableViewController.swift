@@ -133,7 +133,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return items.count
+        return names.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -153,7 +153,7 @@ class SpeakersTableViewController: UITableViewController, UITableViewDelegate, U
             let SpeakerDetail = segue.destinationViewController as DetailViewController;
             let indexPath = self.tableView.indexPathForSelectedRow()!
             let n = indexPath.row;
-            SpeakerDEtail.items = ["name": names[n], "byline": bylines[n], "image": images[n], "bio": bios[n]];
+            SpeakerDetail.items = ["name": names[n], "byline": bylines[n], "image": images[n], "bio": bios[n]];
             SpeakerDetail.updateLabels()
         }
     }
