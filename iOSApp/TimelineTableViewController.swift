@@ -13,33 +13,89 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
 
     @IBOutlet var TimelineView: UITableView!
     
-    var items = [
-        ["title": "Registration", "time": "8:30 - 9:30 a.m.", "image": "speakers"],
-        ["title": "Men's Octet (a capella)", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Prasad Kaipa", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Adora Svitak", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Marc Gopin", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Carolyn Gable", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Eric Holt-Gimenez", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Dan Garcia", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Valerie Joi", "time": "10 a.m. - 12 p.m.", "image": "speakers"],
-        ["title": "Lunch", "time": "12 - 1:30 p.m.", "image": "speakers"],
-        ["title": "Cal Taiko", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Suzanne Ackerman-Berman", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Victoria Kisyombe", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Alison Meyer", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Mike Robbins", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Meena Shenoy", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Dan Viederman", "time": "1:30 - 3:15 p.m.", "image": "speakers"],
-        ["title": "Break", "time": "3:15 - 3:45 p.m.", "image": "speakers"],
-        ["title": "Cal Bhangra", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Richmond Sarpong", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Emily Levine", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Eric Rasmussen", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Viviana Guzman", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Steve Wozniack", "time": "3:45 - 5:15 p.m.", "image": "speakers"],
-        ["title": "Reception", "time": "5:15 - 6 p.m.", "image": "speakers"]
+    var titles = [
+        "Registration",
+        "Men's Octet (a capella)",
+        "Prasad Kaipa",
+        "Adora Svitak",
+        "Marc Gopin",
+        "Carolyn Gable",
+        "Eric Holt-Gimenez",
+        "Dan Garcia",
+        "Valerie Joi",
+        "Lunch",
+        "Cal Taiko",
+        "Suzanne Ackerman-Berman",
+        "Victoria Kisyombe",
+        "Alison Meyer",
+        "Mike Robbins",
+        "Meena Shenoy",
+        "Dan Viederman",
+        "Break",
+        "Cal Bhangra",
+        "Richmond Sarpong",
+        "Emily Levine",
+        "Eric Rasmussen",
+        "Viviana Guzman",
+        "Steve Wozniack",
+        "Reception"
     ];
+    
+    var times = [
+        "8:30 - 9:30 a.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "10 a.m. - 12 p.m.",
+        "12 - 1:30 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "1:30 - 3:15 p.m.",
+        "3:15 - 3:45 p.m.",
+        "3:45 - 5:15 p.m.",
+        "3:45 - 5:15 p.m.",
+        "3:45 - 5:15 p.m.",
+        "3:45 - 5:15 p.m.",
+        "3:45 - 5:15 p.m.",
+        "3:45 - 5:15 p.m.",
+        "5:15 - 6 p.m."
+    ]
+    
+    var images = [
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "music",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "music",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker",
+        "speaker"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,18 +126,18 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return items.count
+        return titles.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell-timeline") as UITableViewCell
         
-        let row = self.items[indexPath.row]
+        let n = indexPath.row
 
-        cell.textLabel?.text = row["title"]
-        cell.detailTextLabel?.text = row["time"]
+        cell.textLabel?.text = titles[n]
+        cell.detailTextLabel?.text = times[n]
         
-        let theImage = UIImage(named: String(row["image"]!+".png"))
+        let theImage = UIImage(named: String(images[n]+".png"))
         cell.imageView?.image = theImage
         
         return cell;
