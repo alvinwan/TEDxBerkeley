@@ -13,90 +13,6 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
 
     @IBOutlet var TimelineView: UITableView!
     
-    var titles = [
-        "Registration",
-        "Men's Octet (a capella)",
-        "Prasad Kaipa",
-        "Adora Svitak",
-        "Marc Gopin",
-        "Carolyn Gable",
-        "Eric Holt-Gimenez",
-        "Dan Garcia",
-        "Valerie Joi",
-        "Lunch",
-        "Cal Taiko",
-        "Suzanne Ackerman-Berman",
-        "Victoria Kisyombe",
-        "Alison Meyer",
-        "Mike Robbins",
-        "Meena Shenoy",
-        "Dan Viederman",
-        "Break",
-        "Cal Bhangra",
-        "Richmond Sarpong",
-        "Emily Levine",
-        "Eric Rasmussen",
-        "Viviana Guzman",
-        "Steve Wozniack",
-        "Reception"
-    ];
-    
-    var times = [
-        "8:30 - 9:30 a.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "10 a.m. - 12 p.m.",
-        "12 - 1:30 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "1:30 - 3:15 p.m.",
-        "3:15 - 3:45 p.m.",
-        "3:45 - 5:15 p.m.",
-        "3:45 - 5:15 p.m.",
-        "3:45 - 5:15 p.m.",
-        "3:45 - 5:15 p.m.",
-        "3:45 - 5:15 p.m.",
-        "3:45 - 5:15 p.m.",
-        "5:15 - 6 p.m."
-    ]
-    
-    var images = [
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "music",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "music",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker",
-        "speaker"
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
   
@@ -137,7 +53,7 @@ class TimelineTableViewController: UITableViewController, UITableViewDelegate, U
         cell.textLabel?.text = titles[n]
         cell.detailTextLabel?.text = times[n]
         
-        let theImage = UIImage(named: String(images[n]+".png"))
+        let theImage = UIImage(named: String(imagesTimeline[n]+".png"))
         cell.imageView?.image = theImage
         
         return cell;

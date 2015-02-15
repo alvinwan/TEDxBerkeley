@@ -26,10 +26,9 @@ var names = [
     "Richmond Sarpong",
     "Meera Shenoy",
     "Adora Svitak",
-    "Cal Taiko",
+    "Cal Raijin Taiko",
     "UC Men's Octet",
-    "Dan Viederman",
-    "Steve Wozniak"
+    "Dan Viederman"
 ]
 
 var bylines = [
@@ -52,8 +51,7 @@ var bylines = [
     "Activist for Feminism and Youth Causes",
     "Performance Drum Group",
     "UC Berkeley A Capella Group",
-    "CEO of Verité",
-    "Apple Computer Co-Founder and Philanthropist"
+    "CEO of Verité"
 ]
 
 var bios = [
@@ -100,22 +98,21 @@ var imagesSpeakers = [
     "headshot.jpg",
     "taiko.jpg",
     "10965404_1615056408716561_1849825701_n1.jpg",
-    "DanVieder.jpg",
-    "Woz-Head-Shot2.jpg"
+    "DanVieder.jpg"
 ]
 
 var titles = [
     "Registration",
-    "Men's Octet (a capella)",
+    "UC Men's Octet",
     "Prasad Kaipa",
     "Adora Svitak",
     "Marc Gopin",
     "Carolyn Gable",
-    "Eric Holt-Gimenez",
+    "Eric Holt-Giménez",
     "Dan Garcia",
     "Valerie Joi",
     "Lunch",
-    "Cal Taiko",
+    "Cal Raijin Taiko",
     "Suzanne Ackerman-Berman",
     "Victoria Kisyombe",
     "Alison Meyer",
@@ -128,7 +125,6 @@ var titles = [
     "Emily Levine",
     "Eric Rasmussen",
     "Viviana Guzman",
-    "Steve Wozniack",
     "Reception"
 ];
 
