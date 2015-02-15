@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         
         image.layer.cornerRadius = 75;
         image.clipsToBounds = true;
-        image.layer.borderWidth = 5.0;
+        image.layer.borderWidth = 10.0;
         image.layer.borderColor = UIColor.whiteColor().CGColor
 
         // Do any additional setup after loading the view.
