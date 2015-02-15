@@ -1,5 +1,6 @@
-# iOSApp
-iOS Application version
+# TEDxBerkeley
+TEDxBerkeley iOS Application
+*application for the Febraury 28, 2015 event*
 
 The app features four views and functions:
 - splash page
