@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var labelByline: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var labelBio: UITextView!
+    @IBOutlet weak var imageBG: UIImageView!
     
     var items = ["name": "loading...", "byline": "loading...", "bio": "loading..."]
     
@@ -21,6 +22,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         updateLabels();
+        
+        image.layer.cornerRadius = 75;
+        image.clipsToBounds = true;
+        image.layer.borderWidth = 5.0;
+        image.layer.borderColor = UIColor.whiteColor().CGColor
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +36,7 @@ class DetailViewController: UIViewController {
         labelByline?.text = self.items["byline"]
         labelBio?.text = self.items["bio"]
         image?.image = UIImage(named: String(self.items["image"]!+""))
+        imageBG?.image = UIImage(named: String(self.items["image"]!+""))
     }
 
     override func didReceiveMemoryWarning() {
