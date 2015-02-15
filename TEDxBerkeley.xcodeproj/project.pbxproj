@@ -528,7 +528,7 @@
 				INFOPLIST_FILE = iOSAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TEDxBerkeleyTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSApp.app/iOSApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEDxBerkeley.app/TEDxBerkeley";
 			};
 			name = Debug;
 		};
@@ -543,7 +543,7 @@
 				INFOPLIST_FILE = iOSAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TEDxBerkeleyTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSApp.app/iOSApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEDxBerkeley.app/TEDxBerkeley";
 			};
 			name = Release;
 		};
