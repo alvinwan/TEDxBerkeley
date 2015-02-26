@@ -28,7 +28,8 @@ var names = [
     "Adora Svitak",
     "Cal Raijin Taiko",
     "UC Men's Octet",
-    "Dan Viederman"
+    "Dan Viederman",
+    "Steve Wozniak"
 ]
 
 var bylines = [
@@ -51,7 +52,8 @@ var bylines = [
     "Activist for Feminism and Youth Causes",
     "Performance Drum Group",
     "UC Berkeley A Capella Group",
-    "CEO of Verité"
+    "CEO of Verité",
+    "Apple Co-Founder and Philanthropist"
 ]
 
 var bios = [
@@ -98,7 +100,8 @@ var imagesSpeakers = [
     "headshot.jpg",
     "taiko.jpg",
     "10965404_1615056408716561_1849825701_n1.jpg",
-    "DanVieder.jpg"
+    "DanVieder.jpg",
+    "Woz-Head-Shot2.jpg"
 ]
 
 var titles = [
@@ -125,6 +128,7 @@ var titles = [
     "Emily Levine",
     "Eric Rasmussen",
     "Viviana Guzman",
+    "Steve Wozniak",
     "Reception"
 ];
 
@@ -147,6 +151,7 @@ var times = [
     "1:30 - 3:15 p.m.",
     "1:30 - 3:15 p.m.",
     "3:15 - 3:45 p.m.",
+    "3:45 - 5:15 p.m.",
     "3:45 - 5:15 p.m.",
     "3:45 - 5:15 p.m.",
     "3:45 - 5:15 p.m.",
@@ -176,6 +181,7 @@ var imagesTimeline = [
     "speaker",
     "speaker",
     "music",
+    "speaker",
     "speaker",
     "speaker",
     "speaker",
