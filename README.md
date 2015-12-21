@@ -1,5 +1,5 @@
 # TEDxBerkeley
-*iOS application for the Febraury 28, 2015 event*
+*iOS application for the Febraury 28, 2015 event ([2016's](https://github.com/TEDxBerkeley/iOSapp))*
 
 [View on the app store](https://itunes.apple.com/us/app/tedxberkeley-2015/id971837810)
 
