@@ -1,6 +1,8 @@
 # TEDxBerkeley
 *iOS application for the Febraury 28, 2015 event*
 
+created by [Alvin Wan](http://alvinwan.com)
+
 The app features four views and functions:
 - splash page
 - about
