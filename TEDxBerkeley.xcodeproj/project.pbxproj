@@ -506,7 +506,7 @@
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TEDxBerkeley;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3893c8b2-82af-453f-bcc4-7a643c3bec5d";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -521,7 +521,7 @@
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TEDxBerkeley;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3893c8b2-82af-453f-bcc4-7a643c3bec5d";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
